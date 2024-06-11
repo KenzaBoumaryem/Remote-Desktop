@@ -12,7 +12,7 @@ public interface ScreenEvent extends Remote {
     void mousePressedEvent(double x,double y,MouseEvent event) throws RemoteException;
     void keyPressed(int keyPressed) throws RemoteException;
 
-void mouseDraggedEvent(double x,double y) throws RemoteException;
+    void mouseDraggedEvent(double x,double y) throws RemoteException;
     FileTransfer openFileChooser() throws RemoteException;
     void receiveFile(byte[] fileData, String fileName) throws RemoteException;
 }
